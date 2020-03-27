@@ -10,11 +10,10 @@ import { BannerComponent } from './banner/banner.component';
 import { ProductComponent } from './product/product.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
-import { TrangchuComponent } from './trangchu/trangchu.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, NavComponent, BannerComponent, ProductComponent, FooterComponent, LoginComponent, TrangchuComponent ],
+  declarations: [ AppComponent, HelloComponent, NavComponent, BannerComponent, ProductComponent, FooterComponent, LoginComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
