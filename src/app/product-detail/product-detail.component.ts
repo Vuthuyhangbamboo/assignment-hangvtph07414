@@ -21,5 +21,9 @@ export class ProductDetailComponent implements OnInit {
   this.productService.getProduct().subscribe(data => {this.products=data;})
   // this.products = this.productService.getProduct();
 }
+select: Product[];
+ShowDetail(product){
+  this.select = product;
+}
   
 }

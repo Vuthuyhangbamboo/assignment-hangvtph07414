@@ -20,4 +20,8 @@ export class ProductListComponent implements OnInit {
   getProduct(){
     this.productService.getProduct().subscribe(data => {this.products = data;})
 }
+select: Product[];
+ShowDetail(product){
+  this.select = product;
+}
 }
