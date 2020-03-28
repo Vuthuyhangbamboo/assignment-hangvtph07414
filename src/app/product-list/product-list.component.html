@@ -1,0 +1,18 @@
+<app-trangchu></app-trangchu>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">stt</th>
+      <th scope="col">Tên sản phẩm</th>
+      <th scope="col">Giá</th>
+      <th scope="col">Mô tả</th>
+    </tr>
+    <tr *ngFor="let product of products">
+        <td>{{product.id}}</td>
+        <td>{{product.tensanpham}}</td>
+        <td>{{product.gia}}</td>
+        <td>{{product.mota}}</td>
+        <td><button class="btn btn-primary" (click)="removeItem(product.id)">Xóa</button></td>
+      </tr>
+  </thead>
+</table>
