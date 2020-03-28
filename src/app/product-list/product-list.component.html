@@ -19,20 +19,26 @@
       <th scope="col">Tên sản phẩm</th>
       <th scope="col">Giá</th>
       <th scope="col">Mô tả</th>
+      <th></th>
     </tr>
     <tr *ngFor="let product of products">
         <td>{{product.id}}</td>
         <td>{{product.tensanpham}}</td>
         <td>{{product.gia}}</td>
         <td>{{product.mota}}</td>
-        <td><button class="btn btn-primary" (click)="removeItem(product.id)">Xóa</button></td>
+        <td><button class="btn btn-primary"> Chi tiết sản phẩm</button></td>
       </tr>
   </thead>
 </table>
   </div>
+</div>
  <br>
+ <br>
+ <br>
+ <br>
+ <hr>
 <footer>
-    <div class="container-fluid padding">
+    <div class="container-fluid padding" id="footer">
       <div class="row text-center">
         <div class="col-md-4">
           <img src="https://nhasachtructuyen.com/skin/frontend/ma_greentech/ma_greentech2/images/logo_nstt2.png" height="50">

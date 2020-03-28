@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: "trangchu", component: TrangchuComponent },
   { path: "index", component: IndexComponent},
   { path: "productlist", component: ProductListComponent},
+  { path: "productlist/:productId", component: ProductListComponent},
   { path: "**", redirectTo: "index", pathMatch: "full" }
 ];
 
